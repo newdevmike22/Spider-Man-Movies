@@ -1,0 +1,116 @@
+.heading {
+    margin: 5rem auto 0 auto;
+    text-align: center;
+}
+
+.spidey {
+    border: 3px solid $clr-black;
+}
+
+.title-image {
+    margin-top: -2rem;
+    /* animation */
+    animation: slideFromLeft 5s ease-in-out 1;
+}
+
+.title {
+    color: $clr-blue;
+    font-size: 2.75rem;
+    font-weight: 900;
+    margin-top: -1.85rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    /* animation */
+    animation: slideFromRight 5s ease-in-out 1;
+}
+
+.movie {
+    padding: 1rem 1rem;
+}
+
+h1 {
+    font-size: 1.05rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.btn-desc {
+    color: $clr-white;
+    background: $clr-red;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+ }
+  
+.btn-desc:hover {
+    color: $clr-white;
+    background: $clr-gold;
+}
+
+.card {
+    background: $clr-light-grey;
+}
+
+/* KEYFRAMES */
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-200px);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateX(50px);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(200px);
+        opacity: 0.5;
+    }
+    75% {
+        font-size: 300%;
+        transform: translateX(-50px);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+

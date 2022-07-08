@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500;1,700&family=Space+Mono&display=swap");
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 1080px) {
+  .title-image img {
+    margin-top: 1.5rem;
+  }
+  .title {
+    font-size: 1.4rem !important;
+  }
+  footer {
+    font-size: 12.5px;
+  }
+  .social-icon {
+    font-size: 1.75rem;
+    margin: 0.75rem;
+  }
+  .heading img {
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card img {
+    height: 475px;
+    max-width: 100%;
+  }
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+footer h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.social-icons {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.social-icon {
+  color: #0d068f;
+  font-size: 2rem;
+  margin: 0.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  color: #a2d2ff;
+}
+
+.heading {
+  margin: 5rem auto 0 auto;
+  text-align: center;
+}
+
+.spidey {
+  border: 3px solid #0a0a0a;
+}
+
+.title-image {
+  margin-top: -2rem;
+  /* animation */
+  -webkit-animation: slideFromLeft 5s ease-in-out 1;
+          animation: slideFromLeft 5s ease-in-out 1;
+}
+
+.title {
+  color: #0d068f;
+  font-size: 2.75rem;
+  font-weight: 900;
+  margin-top: -1.85rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  /* animation */
+  -webkit-animation: slideFromRight 5s ease-in-out 1;
+          animation: slideFromRight 5s ease-in-out 1;
+}
+
+.movie {
+  padding: 1rem 1rem;
+}
+
+h1 {
+  font-size: 1.05rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.btn-desc {
+  color: #fff;
+  background: #f2051d;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.btn-desc:hover {
+  color: #fff;
+  background: #CE9461;
+}
+
+.card {
+  background: #F9F9F9;
+}
+
+/* KEYFRAMES */
+@-webkit-keyframes slideFromRight {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideFromLeft {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    font-size: 300%;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    font-size: 300%;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
